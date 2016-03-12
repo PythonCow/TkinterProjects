@@ -1,11 +1,9 @@
-#This program was written by Ben Jamison.
+#This program was written by Ben J (PythonCow).
 
 #Tkinter is a GUI module for python that will be used for graphics.
 import Tkinter as tk
 
-
 #Requests user input.
-
 input_master = tk.Tk()
 
 tk.Label(input_master, text = "f(x) = ").pack(side = tk.LEFT, padx = 10)
