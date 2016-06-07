@@ -1,3 +1,4 @@
+#! /usr/bin/python
 #This program was written by Ben J (PythonCow).
 
 #Tkinter is a GUI module for python that will be used for graphics.
@@ -5,6 +6,7 @@ import Tkinter as tk
 
 #Requests user input.
 input_master = tk.Tk()
+input_master.wm_title("Function Reader")
 
 tk.Label(input_master, text = "f(x) = ").pack(side = tk.LEFT, padx = 10)
 
@@ -25,8 +27,11 @@ input_master.mainloop()
 
 #Set up the canvas widget.
 master = tk.Tk()
+input_master.wm_title("Function Reader")
+
 graph = tk.Canvas(master, width = 1000, height = 1000)
 graph.pack(pady = 10, padx = 10)
+
 #Create x and y axies.
 graph.create_rectangle(0,0,1000,1000, fill = "white")
 graph.create_line(0,500,1000,500)
